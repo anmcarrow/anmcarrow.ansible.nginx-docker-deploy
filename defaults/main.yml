@@ -9,6 +9,7 @@
       - rundeck
       - ansible
 
+    nginx_container_name: "nginx"
     nginx_http_port: "80"
     nginx_http_published_port: "80"
     nginx_https_port: "443"
