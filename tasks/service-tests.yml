@@ -8,5 +8,5 @@
     msg: "Check HTTP(S) ports"
   with_items:
     - "{{ nginx_http_published_port }}"
-    - "{{ nginx_https_published_port }}"
+#    - "{{ nginx_https_published_port }}"
   tags: nginx,test

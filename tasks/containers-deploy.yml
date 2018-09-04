@@ -19,7 +19,7 @@
 
 - name: "Run the local Nginx container"
   docker_container:
-    name: "{{ S }}"
+    name: "{{ nginx_container_name }}"
     hostname: "{{ ansible_hostname }}"
     state: started
     pull: yes
