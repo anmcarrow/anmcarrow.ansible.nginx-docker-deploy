@@ -2,7 +2,7 @@
 
 - name: "Deploy Nginx HTTP(s) files"
   synchronize:
-    src: "{{ role_path }}/files/"
+    src: "{{ nginx_conf_src }}"
     dest: "{{ nginx_conf_path }}"
   tags: nginx,conf
 
