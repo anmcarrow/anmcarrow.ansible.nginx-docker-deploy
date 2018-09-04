@@ -4,6 +4,7 @@
   synchronize:
     src: "{{ role_path }}/files/"
     dest: "{{ nginx_conf_path }}"
+  tags: nginx,conf
 
 - name: "Run the local Nginx container"
   docker_container:
