@@ -1,1 +1,1 @@
-This role can install and test [Nginx](https://nginx.org) web service in the Docker container.
+This role can install and test [Nginx](https://nginx.org) web server (for use to HTTP and HTTPS proto) in the Docker container.

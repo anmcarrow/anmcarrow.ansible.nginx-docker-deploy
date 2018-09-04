@@ -1,5 +1,10 @@
 ---
 
+- name: "Deploy Nginx HTTP(s) files"
+  synchronize:
+    src: "{{ role_path }}/files/"
+    dest: "{{ nginx_conf_path }}"
+
 - name: "Run the local Nginx container"
   docker_container:
     name: nginx
@@ -11,7 +16,8 @@
     restart_policy: "unless-stopped"
     image: "{{ docker_nginx_image }}"
     volumes:
-      - "{{ nginx_conf_path }}:/etc/nginx"
+      - "{{ nginx_conf_path }}:/etc/nginx/conf.d"
+      - "{{ nginx_data_path }}:/var/www"
     exposed_ports:
       - "{{ nginx_http_port }}"
       - "{{ nginx_https_port }}"
