@@ -19,3 +19,5 @@
     volumes_prefix_nginx: "{{ installation_prefix }}/docker/nginx"
     nginx_conf_path: "{{ volumes_prefix_nginx }}/conf"
     nginx_data_path: "{{ volumes_prefix_nginx }}/data"
+
+    nginx_conf_src: "{{ role_path }}/files/"
