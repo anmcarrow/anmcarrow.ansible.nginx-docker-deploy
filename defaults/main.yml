@@ -17,7 +17,7 @@
 
     docker_nginx_image: "nginx:alpine"
 
-    volumes_prefix_nginx: "{{ installation_prefix }}/docker/nginx"
+    volumes_prefix_nginx: "{{ installation_prefix }}/docker/{{ nginx_container_name }}"
     nginx_conf_path: "{{ volumes_prefix_nginx }}/conf"
     nginx_data_path: "{{ volumes_prefix_nginx }}/data"
 
