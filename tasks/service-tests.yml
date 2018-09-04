@@ -1,0 +1,9 @@
+---
+
+- name: Test HTTP port
+  wait_for:
+    port: "{{ nginx_published_port }}"
+    host: "{{ ansible_default_ipv4.address }}"
+    timeout: 120
+    msg: "Check HTTP port"
+  tags: nginx,test
