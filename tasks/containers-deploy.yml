@@ -23,6 +23,6 @@
       - "{{ nginx_http_port }}"
       - "{{ nginx_https_port }}"
     published_ports:
-      - "{{ nginx_published_http_port }}:{{ nginx_http_port }}"
-      - "{{ nginx_published_https_port }}:{{ nginx_https_port }}"
+      - "{{ nginx_http_published_port }}:{{ nginx_http_port }}"
+      - "{{ nginx_https_published_port }}:{{ nginx_https_port }}"
   tags: nginx,run

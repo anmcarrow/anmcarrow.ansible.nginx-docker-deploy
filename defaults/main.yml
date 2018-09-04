@@ -10,9 +10,9 @@
       - ansible
 
     nginx_http_port: "80"
-    nginx_published_http_port: "80"
+    nginx_http_published_port: "80"
     nginx_https_port: "443"
-    nginx_published_https_port: "443"
+    nginx_https_published_port: "443"
 
     docker_nginx_image: "nginx:alpine"
 
