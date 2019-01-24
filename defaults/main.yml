@@ -9,7 +9,7 @@
       - rundeck
       - ansible
 
-    rsync_pkgs:
+    required_pkgs:
       - rsync
 
     nginx_container_name: "nginx"

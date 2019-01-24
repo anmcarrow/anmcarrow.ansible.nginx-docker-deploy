@@ -1,5 +1,6 @@
-  - name: Install rsync packages
-    yum:
-        name: "{{ rsync_pkgs }}"
+  - name: Install required packages
+    package:
+        name: "{{ required_pkgs }}"
         state: present
         update_cache: true
+    tags: nginx,pkg
