@@ -1,0 +1,5 @@
+  - name: Install rsync packages
+    yum:
+        name: "{{ rsync_pkgs }}"
+        state: present
+        update_cache: true
