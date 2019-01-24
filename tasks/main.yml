@@ -1,2 +1,3 @@
+    - import_tasks: pkg-install.yml
     - import_tasks: containers-deploy.yml
     - import_tasks: service-tests.yml

@@ -9,6 +9,9 @@
       - rundeck
       - ansible
 
+    rsync_pkgs:
+      - rsync
+
     nginx_container_name: "nginx"
     nginx_http_port: "80"
     nginx_http_published_port: "80"
